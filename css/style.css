@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container-fluid {
+    height: 100vh;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: arial;
+} */
+
+.ms_wrapper {
+    height: 100vh;
+    background-color: #222222;
+}
+
+.ms_clock {
+
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 10px solid rgb(21, 60, 115);
+}
+
+.ms_clock span {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.div-lap {
+    max-height: 20vh;
+    overflow: auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.ms_btn {
+    border: 0;
+    padding: 10px;
+    background-color: rgb(21, 60, 115);
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.5s;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gap {
+    gap: 15px;
+}
+
+.ms_hidden {
+    height: 0;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
