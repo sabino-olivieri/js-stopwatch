@@ -3,7 +3,7 @@ function printElem(whatPrint, wherePrint) {
     wherePrint.innerText = whatPrint;
 }
 
-function editStr(element, nextItem = 0) {
+function editStr(element, nextItem = -1) {
     let string = "";
 
     if (nextItem > -1) {

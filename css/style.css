@@ -4,20 +4,12 @@
     box-sizing: border-box;
 }
 
-/* .container-fluid {
-    height: 100vh;
+body {
     background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    justify-content: space-between;
-    font-family: arial;
-} */
+}
 
 .ms_wrapper {
     height: 100vh;
-    background-color: #222222;
 }
 
 .ms_clock {
@@ -29,7 +21,7 @@
 
 .ms_clock span {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -40,7 +32,7 @@
     border-radius: 10px;
     padding: 5px;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .ms_btn {
@@ -55,17 +47,6 @@
     transition: all 0.5s;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.gap {
-    gap: 15px;
-}
-
 .ms_hidden {
     height: 0;
     width: 0;
@@ -74,3 +55,4 @@
     position: absolute;
     z-index: -1;
 }
+

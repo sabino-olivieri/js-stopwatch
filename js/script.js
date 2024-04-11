@@ -55,6 +55,8 @@ playElem.addEventListener("click", function() {
                 
             seconds = 0;
             minutes = (minutes === -1) ? (minutes = 1) : (minutes = minutes + 1);
+            strToPrint = editStr(seconds, minutes);
+            printElem(strToPrint, secondsElem);
         }
         
         if( minutes < 60 && minutes > 0){
@@ -67,6 +69,9 @@ playElem.addEventListener("click", function() {
 
             minutes = 0;
             hours = (hours === -1) ? (hours = 1) : (hours = hours + 1);
+            centSecondElem.classList.add("ms_hidden");
+            strToPrint = editStr(minutes, hours);
+            printElem(strToPrint, minutesElem);
 
             strToPrint = editStr(hours);
             printElem(strToPrint, hoursElem);
@@ -92,6 +97,7 @@ stopElem.addEventListener("click", function () {
     pauseElem.classList.add("ms_hidden");
     divLapElem.classList.add("ms_hidden");
     playElem.classList.remove("ms_hidden");
+    centSecondElem.classList.add("ms_hidden");
     printElem("", centSecondElem);
     printElem("", secondsElem);
     printElem("", minutesElem);
